@@ -1,4 +1,4 @@
-### 🧩 Python Sets – Theory
+### 🧩 Python Sets
 
 A **set** in Python is an **unordered, mutable collection** of **unique elements**.  
 Sets are useful for membership testing, mathematical operations, and eliminating duplicates.
@@ -52,3 +52,62 @@ A frozenset is an immutable version of a set — once created, it cannot be chan
 fs = frozenset([1, 2, 3])
 print(fs)
 ```
+
+
+### 🧩 Python Strings
+
+#### 🔹Creation and Access
+```python
+# String indexing
+s = "Artificial"
+print(s[0])        # 'A' - first character
+print(s[-1])       # 'l' - last character
+print(s[0:3])      # 'Art' - slicing
+print(s[::-1])     # 'lacifitrA' - reversed string
+```
+
+#### 🔹Case Conversion
+```python
+text = "hello World"
+
+print(text.upper())        # "HELLO WORLD"
+print(text.lower())        # "hello world"
+print(text.capitalize())   # "Hello world"
+print(text.title())        # "Hello World"
+print(text.swapcase())     # "HELLO wORLD"
+
+# Example usage
+name = "john doe"
+formatted_name = name.title()  # "John Doe"
+```
+
+#### 🔹Search and Replace
+```python
+text = "Hello World, Welcome to Python World"
+
+# Finding substrings
+print(text.find("World"))        # 6 - first occurrence
+print(text.rfind("World"))       # 28 - last occurrence
+print(text.find("Java"))         # -1 - not found
+print(text.index("World"))       # 6 - similar to find but raises ValueError if not found
+
+# Checking content
+print(text.startswith("Hello"))  # True
+print(text.endswith("World"))    # True
+print("World" in text)          # True
+
+# Replacement
+print(text.replace("World", "Earth"))  # "Hello Earth, Welcome to Python Earth"
+print(text.replace("World", "Earth", 1))  # "Hello Earth, Welcome to Python World" - replace only first occurrence
+```
+
+#### 🔹Splitting and Joining
+```python
+# Splitting strings
+text = "apple,banana,cherry,date"
+fruits = text.split(",")
+print(fruits)  # ['apple', 'banana', 'cherry', 'date']
+
+csv_data = "John,25,Engineer"
+name, age, profession = csv_data.split(",")
+print(f"Name: {name}, Age: {age}, Profession: {profession}")
