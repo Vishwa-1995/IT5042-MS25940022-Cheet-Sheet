@@ -111,3 +111,25 @@ print(fruits)  # ['apple', 'banana', 'cherry', 'date']
 csv_data = "John,25,Engineer"
 name, age, profession = csv_data.split(",")
 print(f"Name: {name}, Age: {age}, Profession: {profession}")
+```
+
+#### 🔹String Formatting
+```python
+# Old style formatting
+name = "John"
+age = 25
+print("Hello, %s! You are %d years old." % (name, age))
+
+# str.format() method
+print("Hello, {}! You are {} years old.".format(name, age))
+print("Hello, {0}! You are {1} years old.".format(name, age))
+print("Hello, {name}! You are {age} years old.".format(name=name, age=age))
+
+# f-strings (Python 3.6+)
+print(f"Hello, {name}! You are {age} years old.")
+print(f"Next year you'll be {age + 1} years old.")
+
+# Formatting numbers
+price = 49.9876
+print(f"Price: ${price:.2f}")  # Price: $49.99
+```
