@@ -1,5 +1,38 @@
 ### 🧩 Python Sets
+```python
+!pip install numpy pandas matplotlib
 
+import hashlib
+import hmac
+import secrets
+import binascii
+import pandas as pd
+import matplotlib.pyplot as plt
+import numpy as np
+import csv
+import logging
+import os
+import sys
+import time
+from datetime import datetime, timedelta, timezone
+import jwt
+import base64, json
+import seaborn as sns
+import pprint
+from pathlib import Path
+from functools import wraps
+import inspect
+import json
+import re
+import random
+import argparse
+from abc import ABC, abstractmethod
+from typing import Dict, List, Any
+import traceback
+import tempfile
+from ast import Dict
+from __future__ import annotations
+```
 A **set** in Python is an **unordered, mutable collection** of **unique elements**.  
 Sets are useful for membership testing, mathematical operations, and eliminating duplicates.
 
